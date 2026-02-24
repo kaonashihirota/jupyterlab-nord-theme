@@ -16,4 +16,4 @@ def _jupyter_labextension_paths():
          widget installation
     dest: Destination directory name to install to
     """
-    return [{"src": "labextension", "dest": "jupyterlab-nord-theme"}]
+    return [{"src": "labextension", "dest": "jupyterlab-nord"}]
