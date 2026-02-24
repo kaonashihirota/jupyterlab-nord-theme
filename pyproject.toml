@@ -10,7 +10,7 @@ readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.9"
 authors = [
-    { name = "carlyou", email = "carlyou@users.noreply.github.com" },
+    { name = "kaonashihirota", email = "kaonashihirota@users.noreply.github.com" },
 ]
 keywords = ["Jupyter", "JupyterLab", "JupyterLab4", "theme", "Nord"]
 classifiers = [
@@ -29,13 +29,15 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 dependencies = [
+    "build>=1.4.0",
     "jupyterlab>=4.0.0,<5",
+    "twine>=6.2.0",
 ]
 
 [project.urls]
-Homepage = "https://github.com/carlyou/jupyterlab-nord-theme"
-Bug-Tracker = "https://github.com/carlyou/jupyterlab-nord-theme/issues"
-Repository = "https://github.com/carlyou/jupyterlab-nord-theme.git"
+Homepage = "https://github.com/kaonashihirota/jupyterlab-nord-theme"
+Bug-Tracker = "https://github.com/kaonashihirota/jupyterlab-nord-theme/issues"
+Repository = "https://github.com/kaonashihirota/jupyterlab-nord-theme.git"
 
 [tool.hatch.version]
 source = "nodejs"
