@@ -1,14 +1,15 @@
 /*
- * JupyterLab Nord Theme - Based on Default Dark Theme
- * Uses the official Nord color palette with all default layout/sizing preserved
+ * JupyterLab Nord Theme - Darkened Variant
+ * Based on Default Dark Theme
+ * Uses a deepened Nord Polar Night palette for reduced eye strain in low light
  */
 
 :root {
-  /* Nord Color Palette */
-  --nord0: #2e3440;
-  --nord1: #3b4252;
-  --nord2: #434c5e;
-  --nord3: #4c566a;
+  /* Nord Color Palette - Darkened Polar Night */
+  --nord0: #242933; /* Deepened from #2e3440 */
+  --nord1: #2e3440; /* Shifted from #3b4252 */
+  --nord2: #353b45; /* Shifted from #434c5e */
+  --nord3: #3b4252; /* Shifted from #4c566a */
   --nord4: #d8dee9;
   --nord5: #e5e9f0;
   --nord6: #eceff4;
@@ -27,8 +28,8 @@
 }
 
 body[data-jp-theme-name='Nord'] {
-  /* Elevation - keep default shadow system */
-  --jp-shadow-base-lightness: 32;
+  /* Elevation - Darkened shadow system to match deeper background */
+  --jp-shadow-base-lightness: 20; /* Reduced from 32 */
   --jp-shadow-umbra-color: rgba(
     var(--jp-shadow-base-lightness),
     var(--jp-shadow-base-lightness),
@@ -149,7 +150,7 @@ body[data-jp-theme-name='Nord'] {
   --jp-code-cursor-width1: 2px;
   --jp-code-cursor-width2: 4px;
 
-  /* Layout Colors - using Nord colors */
+  /* Layout Colors - using Darkened Nord colors */
   --jp-layout-color0: var(--nord0);
   --jp-layout-color1: var(--nord1);
   --jp-layout-color2: var(--nord2);
@@ -221,12 +222,12 @@ body[data-jp-theme-name='Nord'] {
   );
 
   /* Rendermime styles */
-  --jp-rendermime-error-background: rgba(191, 97, 106, 0.28);
+  --jp-rendermime-error-background: rgba(191, 97, 106, 0.35); /* Increased opacity for darker bg */
   --jp-rendermime-table-row-background: var(--nord1);
   --jp-rendermime-table-row-hover-background: rgba(136, 192, 208, 0.2);
 
   /* Dialog specific styles */
-  --jp-dialog-background: rgba(46, 52, 64, 0.6);
+  --jp-dialog-background: rgba(36, 41, 51, 0.8); /* Updated to match new Nord0 */
 
   /* Console specific styles */
   --jp-console-padding: 10px;
@@ -314,7 +315,7 @@ body[data-jp-theme-name='Nord'] {
 
   /* Scrollbar related styles */
   --jp-scrollbar-background-color: var(--nord1);
-  --jp-scrollbar-thumb-color: 76, 86, 106;
+  --jp-scrollbar-thumb-color: 59, 66, 82; /* Updated to match new Nord3 */
   --jp-scrollbar-endpad: 3px;
   --jp-scrollbar-thumb-margin: 3.5px;
   --jp-scrollbar-thumb-radius: 9px;
