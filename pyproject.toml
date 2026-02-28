@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "jupyterlab-nord"
-version = "0.1.1"
+version = "0.1.12"
 description = "An arctic, north-bluish clean and elegant JupyterLab theme based on the Nord color palette"
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -31,6 +31,7 @@ classifiers = [
 dependencies = [
     "build>=1.4.0",
     "jupyterlab>=4.0.0,<5",
+    "six>=1.17.0",
     "twine>=6.2.0",
 ]
 
@@ -46,12 +47,12 @@ source = "nodejs"
 fields = ["description", "authors", "urls"]
 
 [tool.hatch.build.targets.sdist]
-artifacts = ["jupyterlab_nord_theme/labextension"]
+artifacts = ["jupyterlab_nord/labextension"]
 exclude = [".github", "binder"]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"jupyterlab_nord_theme/labextension" = "share/jupyter/labextensions/jupyterlab-nord-theme"
-"install.json" = "share/jupyter/labextensions/jupyterlab-nord-theme/install.json"
+"jupyterlab_nord/labextension" = "share/jupyter/labextensions/jupyterlab-nord"
+"install.json" = "share/jupyter/labextensions/jupyterlab-nord/install.json"
 
 [dependency-groups]
 dev = [

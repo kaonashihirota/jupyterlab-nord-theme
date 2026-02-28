@@ -1176,12 +1176,13 @@ wheels = [
 ]
 
 [[package]]
-name = "jupyterlab-nord-theme"
-version = "0.1.1"
+name = "jupyterlab-nord"
+version = "0.1.8"
 source = { editable = "." }
 dependencies = [
     { name = "build" },
     { name = "jupyterlab" },
+    { name = "six" },
     { name = "twine" },
 ]
 
@@ -1195,6 +1196,7 @@ dev = [
 requires-dist = [
     { name = "build", specifier = ">=1.4.0" },
     { name = "jupyterlab", specifier = ">=4.0.0,<5" },
+    { name = "six", specifier = ">=1.17.0" },
     { name = "twine", specifier = ">=6.2.0" },
 ]
 

@@ -9,11 +9,11 @@ import { IThemeManager } from '@jupyterlab/apputils';
  * A plugin to add a Nord theme to JupyterLab.
  */
 const plugin: JupyterFrontEndPlugin<void> = {
-  id: 'jupyterlab-nord-theme:plugin',
+  id: 'jupyterlab-nord:plugin',
   description: 'A Nord theme for JupyterLab',
   requires: [IThemeManager],
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
-    const style = 'jupyterlab-nord-theme/index.css';
+    const style = 'jupyterlab-nord/index.css';
 
     manager.register({
       name: 'Nord',

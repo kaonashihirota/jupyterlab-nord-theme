@@ -22,6 +22,8 @@
   --nord13: #ebcb8b;
   --nord14: #a3be8c;
   --nord15: #b48ead;
+  --nord16: #4c566a;
+  --nord17: #6B778C;
 
   /* Custom auxiliary colors */
   --nord-aux-comment: #8a9199;
@@ -166,7 +168,7 @@ body[data-jp-theme-name='Nord'] {
 
   /* Brand/accent - using Nord frost colors */
   --jp-brand-color0: var(--nord10);
-  --jp-brand-color1: var(--nord9);
+  --jp-brand-color1: var(--nord16);
   --jp-brand-color2: var(--nord8);
   --jp-brand-color3: var(--nord7);
   --jp-brand-color4: var(--nord6);
@@ -177,7 +179,7 @@ body[data-jp-theme-name='Nord'] {
 
   /* State colors - using Nord aurora colors */
   --jp-warn-color0: var(--nord13);
-  --jp-warn-color1: var(--nord13);
+  --jp-warn-color1: var(--nord17);
   --jp-warn-color2: var(--nord13);
   --jp-warn-color3: var(--nord13);
   --jp-error-color0: var(--nord11);
